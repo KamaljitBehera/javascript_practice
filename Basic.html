@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic of Javascript</title>
+  </head>
+  <body>
+    <h3>This Program file is used to demonstrate the basic of javascript</h3>
+
+    <h5>
+      Here we first see about how to link the JavaScript to HTML. <br />There
+      are two ways:
+    </h5>
+    <ol>
+      <li>
+        Inline JavaScript &nbsp;
+        <button onclick="alert('This message is print in inline way')">
+          click
+        </button>
+      </li>
+      <li>Internal JavaScript</li>
+
+      <li>External JavaScript</li>
+    </ol>
+
+    <h3>Different ways to print the output of Javascript</h3>
+    <ol>
+      <li>
+        By using innerHTML property
+        <p id="output"></p>
+      </li>
+      <li>By using console.log() method it print in the console.</li>
+      <li>
+        By using document.write() method
+        <button
+          onclick="document.write('This is the output through the document.write() method')"
+        >
+          click me
+        </button>
+      </li>
+      <li>
+        By using alert() method
+        <button onclick="alert('This is the output by alert()') ">click</button>
+      </li>
+      <li>
+        By using the print()
+        <button onclick="window.print()">Click here to Print</button>
+      </li>
+      <li>
+        By using prompt() method we can take input as well as print
+        <button onclick="prompt('Enter tthe name')">Click here</button>
+      </li>
+    </ol>
+
+    <h3>There are two type of commentline are there in Javascript</h3>
+    <ol>
+      <li>Single line comment
+        <br>
+        <button onclick="document.writeln('//This is the single line comment')">click</button>
+      </li>
+      <li>Multiline  comment
+        <br>
+        <button onclick="document.writeln('/*<br>This is the single line comment<br>*/')">click</button>
+      </li>
+
+    </ol>
+    <script>
+      alert("This message is print in internal way");
+      document.getElementById("output").innerHTML =
+        "'Output through innerHTML property'";
+
+      console.log("This is the output through the  console.log()");
+    </script>
+    <script src="Basic.js"></script>
+  </body>
+</html>
