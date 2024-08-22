@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Here at the top i add the script tag and then check the perfermance -->
+     <!-- <script src="07_Loops.js"></script>  By this way the browser is unable to open page-->
+     <p>Hello there everyone</p>
+     <!-- By using the defer attribute -->
+     <script defer>
+        // let time=performance.now();
+        // console.log(time);
+
+
+        // Checking the perfermance when using the if else and nested else if statement
+
+     /*   let a=10;
+        let b=20;
+        let operator='+';
+        if(operator==='+'){
+            console.log(a+b);
+        }
+        else if(operator==='-'){
+            console.log(a-b);
+        }
+        else if (operator==='*') {
+            console.log(a*b);
+            
+        }
+        else{
+            console.log(a/b);
+        }
+        let time1=performance.now();
+        console.log(time1);
+        */
+        
+        // Same program but by using switch case
+        // We should use the switch case way rather than other to improve our perfermance speed.
+        let a1=10;
+        let b1=20;
+        let operator1='+';
+        switch(operator1)
+        {
+            case '+':
+                console.log(a1+b1);
+                break;
+            case '-':
+                console.log(a1-b1);
+                break; 
+            case '*':
+                console.log(a1*b1);
+                break; 
+            case '/':
+                console.log(a1/b1);
+                break;  
+        }
+        let time2=performance.now();
+        console.log(time2);
+        // we should use the less loop to complete our program that makes our program more fastre and efficient way.
+
+        for(let i=0;i<5;i++){
+            console.log(i);
+        }
+        let time3=performance.now();
+        console.log(time3);
+
+        for(let i=0;i<10;i++){
+            console.log(i);
+        }
+        let time4=performance.now();
+        console.log(time4);
+  
+
+        // push() method
+    let Animals = ["Tiger", "Giraffe", "Horse", "Deer"];
+    Animals.push("Zebra");
+    console.log(Animals);
+    let time5=performance.now();
+    console.log(time5);
+
+     // pop() method
+    Animals.pop();
+    console.log(Animals);
+    let time6=performance.now();
+    console.log(time6);
+
+     // push() method
+     
+    Animals.shift();
+    console.log(Animals);
+    let time7=performance.now();
+    console.log(time7);
+    
+     </script>
+</body>
+</html>
