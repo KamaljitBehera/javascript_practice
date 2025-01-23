@@ -6,7 +6,7 @@
 let addRes=add(10,10);
 console.log(addRes);
 
-// There are three way we can write the function 
+// There are four way we can write the function 
 // 1. Function declaration
 function addNum(a,b){
     return a+b;
